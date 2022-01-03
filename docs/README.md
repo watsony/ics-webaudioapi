@@ -1,7 +1,10 @@
 # Web Audio API
 
-* 本リポジトリのGitPage
+* 【GitHub】 本リポジトリのGitPage
 https://watsony.github.io/ics-webaudioapi/
+
+* Watson Mac Git Path
+/Users/watson/Documents/Programming/JavaScript/GIT/ics-webaudioapi
 
 * 【isc.media】 音を操るWeb技術 - Web Audio API入門
 https://ics.media/entry/200427/
