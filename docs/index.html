@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Audio API</title>
+  </head>
+  <body>
+    <a href="./part1-audio/index.html">音源の作成　audioタグからの読み込み</a><br>
+    <a href="./part1-buffer/index.html">音源の作成　ファイルをbufferとして読み込む</a><br>
+    <a href="./part1-oscillator/index.html">オシレーターの作成</a><br>
+    <a href="./part2-gain/">音量調節機能をつくろう</a><br>
+    <a href="./part2-vibrato/index.html">ビブラートを作ってみよう</a><br>
+    <button class="play">play</button>
+    <button class="stop">stop</button>
+    <div class="gain">
+      <h2>volume（音量）</h2>
+      <input id="volume" type="range" min="0" max="1" value="0.5" step="0.01" />
+      <span id="gain-text">volume:0.5</span>
+    </div>
+    <div>
+      <h2>Pan（方向）</h2>
+      <input id="pan" type="range" min="-1" max="1" value="0" step="0.01" />
+      <span id="pan-text">pan:0</span>
+    </div>
+    <div>
+      <h2>Hz（音程）</h2>
+      <input id="hz" type="range" min="20" max="2000" value="440" step="5" />
+      <span id="hz-text">440Hz</span>
+    </div>
+    <div>
+      <h2>Wave Type（音色）</h2>
+      <input type="radio" class="wave" name="wave" value="sine" checked>sine</button>
+      <input type="radio" class="wave" name="wave" value="square">square</button>
+      <input type="radio" class="wave" name="wave" value="sawtooth">sawtooth</button>
+      <input type="radio" class="wave" name="wave" value="triangle">triangle</button>
+    </div>
+    <div>
+      <h2>lfo（エフェクト）</h2>
+      <p>※depthがビブラートの大きさ、rateが振動の速さです</p>
+      <input id="depth" type="range" min="0" max="50" value="0" step="0.05" />
+      <span id="depth-text">depth:0</span>
+      <input id="rate" type="range" min="0" max="10" value="0" step="0.05" />
+      <span id="rate-text">range:0</span>
+    </div>
+    <input id="threshold" type="range" min="-100" max="0" value="-24" step="1" />
+
+  </body>
+  <script src="./main.js"></script>
+  <style>
+    div{
+      padding-bottom: 40px;
+      border-bottom: 2px solid #666;
+    }
+  </style>
+</html>
